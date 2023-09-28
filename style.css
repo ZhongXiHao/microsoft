@@ -1,0 +1,320 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+/* 
+body {
+  width: 83.125%;
+  margin: 0 auto;
+} */
+
+header,
+.container {
+  width: 83.125%;
+  margin: 0 auto;
+}
+
+header > .icon {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: -0.075rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  position: relative;
+}
+
+header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav,
+header aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 0.9rem;
+}
+
+a:link,
+a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover,
+aside a:hover {
+  text-decoration: underline black 2px;
+  text-underline-offset: 5px;
+}
+
+.icon {
+  width: 108px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.main_img {
+  width: 100%;
+}
+
+.img_container {
+  position: relative;
+}
+
+.Xbox {
+  position: absolute;
+  top: 35%;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Xbox h1 {
+  font-weight: 600;
+}
+
+.Xbox a {
+  display: inline-block;
+  background-color: #0067b8;
+  align-self: flex-start;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.products {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.product a {
+  font-weight: 500;
+  color: #0067b8;
+  text-decoration: underline;
+}
+.business_container {
+  width: 100%;
+}
+
+.business_container h1 {
+  text-align: left;
+}
+
+.all_business {
+  display: flex;
+  justify-content: space-between;
+  gap: px;
+}
+
+.all_business a {
+  color: black;
+}
+
+.business {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 23%;
+}
+
+.business img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.business h2.new::before {
+  content: "New";
+  display: inline-block;
+  background-color: #ffb900;
+  position: absolute;
+  top: -30px;
+  font-size: 1rem;
+  padding: 4px 8px;
+}
+
+.business p {
+  margin-top: 20px;
+}
+
+span.buy {
+  font-weight: 500;
+  margin-top: 25px;
+  color: #0067b8;
+}
+
+.contact {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 82%;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.others {
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #eee;
+  color: #666;
+  display: flex;
+  padding: 30px 8.4375%;
+  justify-content: space-between;
+}
+
+.others nav a {
+  color: #666;
+}
+
+#earth-icon {
+  color: #666;
+}
+
+.others nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 640px) {
+  header,
+  .container {
+    width: auto;
+    margin: 30px 10px;
+  }
+
+  header nav,
+  header aside {
+    display: none;
+  }
+
+  header {
+    margin: 20px auto;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid #eee 2px;
+  }
+
+  header > .icon {
+    display: inline;
+  }
+
+  footer {
+    margin: 0 auto;
+  }
+
+  .products {
+    width: 100%;
+    margin: 0 auto;
+    order: -1;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .Xbox {
+    position: static;
+    margin-left: 1rem;
+  }
+
+  .all_business {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .business {
+    width: 100%;
+  }
+
+  .contact {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .others {
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: #eee;
+    color: #666;
+    display: flex;
+    padding: 30px 15px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .others nav {
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 10px;
+  }
+}
